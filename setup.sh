@@ -164,6 +164,7 @@ alias jk="jekyll"
 alias kc="kubectl"
 alias vg="vagrant"
 alias gd="gradle"
+alias dk="docker"
 EOF
 
 sudo gem install jekyll-feed jekyll-seo-tag
