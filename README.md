@@ -11,13 +11,31 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * git
 * zsh
 * [zgen](https://github.com/tarjoilija/zgen)
+* oh-my-zsh
+* oh-my-zsh/git
+* oh-my-zsh/command-not-found
+* oh-my-zsh/vi-mode
+* zsh-syntax-highlighting
+* zsh-history-substring-search
+* zsh-autosuggestions
+* zsh-plugin-colored-man
+* zsh-completions
+* dst.zsh-them
 * zip
 * jekyll
+* jekyll-feed
+* jekyll-seo-tag
 * docker-ce
 * docker-compose
 * docker-machine
 * python2
 * gcloud sdk
+* [vim-plug](https://github.com/junegunn/vim-plug)
+* [molokai](https://github.com/tomasr/molokai) vim theme
+* [goyo](https://github.com/junegunn/goyo.vim) vim plugin
+* [tabular](https://github.com/godlygeek/tabular) vim plugin
+* [vim-markdown](https://github.com/plasticboy/vim-markdown) vim plugin
+* [nerdtree](https://github.com/scrooloose/nerdtree) vim plugin
 * ansible
 * golang
 * java
@@ -26,4 +44,4 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * gradle
 * vagrant
 
-more to come...
+The list keeps growing...
