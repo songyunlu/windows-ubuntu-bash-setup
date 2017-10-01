@@ -14,8 +14,8 @@ git --version
 
 cat << EOF > ~/.gitconfig
 [user]
-    name = songyunlu
-    email = gn00023040@gmail.com
+    name = 
+    email = 
 [core]
     symlinks = false
     autocrlf = true
