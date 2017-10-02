@@ -87,7 +87,7 @@ EOPLUGINS
     zgen load zsh-users/zsh-completions src
 
     # theme
-    zgen oh-my-zsh themes/dst.zsh-theme
+    zgen oh-my-zsh themes/amuse.zsh-theme
 
     # save all to init script
     zgen save
