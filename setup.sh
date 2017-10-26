@@ -117,12 +117,12 @@ sudo apt-get update
 sudo apt-get install -y docker-ce
 
 # docker-compose
-sudo curl -L https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+sudo curl -sL https://github.com/docker/compose/releases/download/1.16.1/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 # docker-machine
-curl -o /tmp/docker-machine -L https://github.com/docker/machine/releases/download/v0.12.2/docker-machine-`uname -s`-`uname -m`
+curl -so /tmp/docker-machine -L https://github.com/docker/machine/releases/download/v0.12.2/docker-machine-`uname -s`-`uname -m`
 chmod +x /tmp/docker-machine
 sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 docker-machine --version
@@ -137,7 +137,7 @@ sudo apt-get install -y python-jmespath
 
 # gcloud sdk
 sudo apt-get remove -y google-cloud-sdk
-curl -o /tmp/google-cloud-sdk.tar.gz -L https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-170.0.1-linux-x86_64.tar.gz
+curl -so /tmp/google-cloud-sdk.tar.gz -L https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-170.0.1-linux-x86_64.tar.gz
 tar zxf /tmp/google-cloud-sdk.tar.gz
 sudo mv /tmp/google-cloud-sdk /usr/local/bin
 sudo /usr/local/bin/google-cloud-sdk/install.sh -q
@@ -172,9 +172,9 @@ EOF
 sudo gem install jekyll-feed jekyll-seo-tag
 
 # vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 mkdir -p ~/.vim/colors
-curl -o ~/.vim/colors/molokai.vim -L https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+curl -so ~/.vim/colors/molokai.vim -L https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
 cat <<EOF > ~/.vimrc
 set nocompatible
@@ -226,7 +226,7 @@ sudo apt-get update
 sudo apt-get install -y ansible
 
 # golang
-curl -o /tmp/golang.tar.gz -L https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
+curl -so /tmp/golang.tar.gz -L https://storage.googleapis.com/golang/go1.9.linux-amd64.tar.gz
 sudo tar -C /usr/local -xzf /tmp/golang.tar.gz
 
 # java
@@ -245,12 +245,12 @@ sudo apt-get install -y sbt
 sudo apt-get install -y maven
 
 # gradle
-curl -o /tmp/gradle.zip -L https://services.gradle.org/distributions/gradle-4.1-bin.zip
+curl -so /tmp/gradle.zip -L https://services.gradle.org/distributions/gradle-4.1-bin.zip
 sudo mkdir /opt/gradle
 sudo unzip -d /opt/gradle /tmp/gradle.zip
 
 # vagrant
-curl -o /tmp/vagrant.deb -L https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb
+curl -so /tmp/vagrant.deb -L https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
 
 exec zsh
