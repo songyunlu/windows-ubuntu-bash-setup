@@ -159,6 +159,8 @@ export PATH="$PATH:/opt/gradle/gradle-4.1/bin"
 export DOCKER_HOST="tcp://127.0.0.1:2375"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
+export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/c"
 
 alias jk="jekyll"
 alias kc="kubectl"
@@ -252,5 +254,8 @@ sudo unzip -d /opt/gradle /tmp/gradle.zip
 # vagrant
 curl -so /tmp/vagrant.deb -L https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
+
+# others
+sudo apt-get install -y htop
 
 exec zsh
