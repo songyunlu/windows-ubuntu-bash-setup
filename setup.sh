@@ -40,7 +40,7 @@ cat << EOF > ~/.gitconfig
     required = true
     process = git-lfs filter-process
 [credential]
-    helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+    helper = store
 EOF
 
 # zsh

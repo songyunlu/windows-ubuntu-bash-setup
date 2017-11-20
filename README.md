@@ -43,5 +43,6 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * maven
 * gradle
 * vagrant
+* htop
 
 The list keeps growing...
