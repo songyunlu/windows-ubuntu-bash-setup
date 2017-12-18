@@ -156,6 +156,7 @@ export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
 export PATH="$PATH:/usr/local/bin/google-cloud-sdk/bin"
 export PATH="$PATH:/usr/local/go/bin"
 export PATH="$PATH:/opt/gradle/gradle-4.1/bin"
+export PATH="$PATH:$HOME/.local/bin
 export DOCKER_HOST="tcp://127.0.0.1:2375"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
@@ -255,6 +256,9 @@ sudo unzip -d /opt/gradle /tmp/gradle.zip
 # vagrant
 curl -so /tmp/vagrant.deb -L https://releases.hashicorp.com/vagrant/2.0.0/vagrant_2.0.0_x86_64.deb
 sudo dpkg -i /tmp/vagrant.deb
+
+# kube-shell
+pip install kube-shell
 
 # others
 sudo apt-get install -y htop
