@@ -130,6 +130,9 @@ docker-machine --version
 # python2
 sudo apt-get install -y python
 
+# python virtual environment
+sudo apt-get install python-virtualenv
+
 # python libs
 sudo apt-get install -y python-pip
 sudo apt-get install -y python-netaddr
@@ -259,6 +262,9 @@ sudo dpkg -i /tmp/vagrant.deb
 
 # kube-shell
 pip install kube-shell
+
+# tox
+pip install tox
 
 # others
 sudo apt-get install -y htop
