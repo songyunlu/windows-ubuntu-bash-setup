@@ -44,5 +44,8 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * gradle
 * vagrant
 * htop
+* jq
+* kube-shell
+* tox
 
 The list keeps growing...
