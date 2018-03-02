@@ -85,6 +85,7 @@ EOPLUGINS
 
     # completions
     zgen load zsh-users/zsh-completions src
+    zgen load ahmetb/kubectx completion
 
     # theme
     zgen oh-my-zsh themes/dst.zsh-theme
@@ -173,6 +174,9 @@ alias gd="gradle"
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+
+source $HOME/.kube-ps1/kube-ps1.sh
+PROMPT='$(kube_ps1)'$PROMPT
 EOF
 
 sudo gem install jekyll-feed jekyll-seo-tag
@@ -269,5 +273,14 @@ pip install tox
 # others
 sudo apt-get install -y htop
 sudo apt-get install -y jq
+
+# kubectx
+git clone https://github.com/ahmetb/kubectx.git "${HOME}/.kubectx"
+sudo ln -s ${HOME}/.kubectx/kubectx /usr/local/bin/kubectx
+sudo ln -s ${HOME}/.kubectx/kubens /usr/local/bin/kubens
+sudo chmod a+x /usr/local/bin/kubectx /usr/local/bin/kubens
+
+# kube-ps1
+git clone https://github.com/jonmosco/kube-ps1.git .kube-ps1
 
 exec zsh

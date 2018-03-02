@@ -47,5 +47,8 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * jq
 * kube-shell
 * tox
+* htop
+* jq
+* kubectx
 
 The list keeps growing...
