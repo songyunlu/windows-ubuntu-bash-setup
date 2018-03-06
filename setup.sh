@@ -174,6 +174,8 @@ alias gd="gradle"
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
+alias kctx="kubectx"
+alias kns="kubens"
 
 source $HOME/.kube-ps1/kube-ps1.sh
 PROMPT='$(kube_ps1)'$PROMPT
