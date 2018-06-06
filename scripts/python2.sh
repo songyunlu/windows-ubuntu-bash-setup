@@ -2,6 +2,6 @@
 
 sudo apt-get install -y python
 python --version
-sudo apt-get install python-virtualenv
+sudo apt-get install -y python-virtualenv
 sudo apt-get install -y python-pip
 pip --version
