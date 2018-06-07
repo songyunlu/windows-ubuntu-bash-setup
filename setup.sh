@@ -22,3 +22,5 @@ source scripts/maven.sh
 source scripts/gradle.sh
 source scripts/vagrant.sh
 source scripts/kubernetes.sh
+
+exec zsh
