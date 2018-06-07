@@ -4,4 +4,4 @@ curl -o /tmp/golang.tar.gz -L https://storage.googleapis.com/golang/go${GOLANG_V
 sudo tar -C /usr/local -xzf /tmp/golang.tar.gz
 go version
 
-echo 'export PATH="$PATH:/usr/local/go/bin"' >> ~/.zshrc
+echo 'export PATH="$PATH:/usr/local/go/bin"' >> ${HOME}/.zshrc

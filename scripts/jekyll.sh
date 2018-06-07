@@ -8,4 +8,4 @@ sudo gem install jekyll bundler
 jekyll -v
 sudo gem install jekyll-feed jekyll-seo-tag
 
-echo 'alias jk="jekyll"' >> ~/.zshrc
+echo 'alias jk="jekyll"' >> ${HOME}/.zshrc

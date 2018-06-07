@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y git
 git --version
 
-cat << EOF > ~/.gitconfig
+cat << EOF > ${HOME}/.gitconfig
 [core]
     symlinks = false
     autocrlf = input
@@ -30,5 +30,5 @@ cat << EOF > ~/.gitconfig
     helper = store
 EOF
 
-echo 'export VISUAL="vim"' >> ~/.zshrc
-echo 'export EDITOR="$VISUAL"' >> ~/.zshrc
+echo 'export VISUAL="vim"' >> ${HOME}/.zshrc
+echo 'export EDITOR="$VISUAL"' >> ${HOME}/.zshrc

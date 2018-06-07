@@ -22,6 +22,6 @@ sudo chmod a+x /usr/local/bin/kubectx /usr/local/bin/kubens
 echo 'alias kns="kubens"' >> ~/.zshrc
 
 # kube-ps1
-git clone https://github.com/jonmosco/kube-ps1.git .kube-ps1
+git clone https://github.com/jonmosco/kube-ps1.git ~/.kube-ps1
 echo 'source $HOME/.kube-ps1/kube-ps1.sh' >> ~/.zshrc
 echo 'PROMPT='$(kube_ps1)'$PROMPT' >> ~/.zshrc

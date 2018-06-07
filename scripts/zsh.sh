@@ -2,7 +2,7 @@
 
 sudo apt-get install -y zsh
 
-cat <<EOF >> ~/.bashrc
+cat <<EOF >> ${HOME}/.bashrc
 if test -t 1; then
     exec zsh
 fi
@@ -10,7 +10,7 @@ EOF
 
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
-cat <<EOF > ~/.zshrc
+cat <<EOF >> ${HOME}/.zshrc
 umask 022
 export ZGEN_RESET_ON_CHANGE="${HOME}/.zshrc"
 # load zgen
@@ -42,9 +42,9 @@ EOPLUGINS
 fi
 EOF
 
-source ~/.bashrc
+source ${HOME}/.bashrc
 
-echo 'bindkey '^J' autosuggest-accept' >> ~/.zshrc
-echo 'bindkey '^P' history-substring-search-up' >> ~/.zshrc  
-echo 'bindkey '^N' history-substring-search-down' >> ~/.zshrc
+echo 'bindkey '^J' autosuggest-accept' >> ${HOME}/.zshrc
+echo 'bindkey '^P' history-substring-search-up' >> ${HOME}/.zshrc  
+echo 'bindkey '^N' history-substring-search-down' >> ${HOME}/.zshrc
 

@@ -4,6 +4,6 @@ curl -so /tmp/vagrant.deb -L https://releases.hashicorp.com/vagrant/${VAGRANT_VE
 sudo dpkg -i /tmp/vagrant.deb
 vagrant --version
 
-echo 'export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"' >> ~/.zshrc
-echo 'export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/c"' >> ~/.zshrc
-echo 'alias vg="vagrant"' >> ~/.zshrc
+echo 'export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"' >> ${HOME}/.zshrc
+echo 'export VAGRANT_WSL_WINDOWS_ACCESS_USER_HOME_PATH="/mnt/c"' >> ${HOME}/.zshrc
+echo 'alias vg="vagrant"' >> ${HOME}/.zshrc

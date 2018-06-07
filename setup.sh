@@ -2,6 +2,8 @@
 
 set -x
 
+umask 022
+
 source env.sh
 
 source scripts/basic.sh

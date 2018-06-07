@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-curl -sfLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-mkdir -p ~/.vim/colors
-curl -so ~/.vim/colors/molokai.vim -L https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
+curl -sfLo ${HOME}/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+mkdir -p ${HOME}/.vim/colors
+curl -so ${HOME}/.vim/colors/molokai.vim -L https://raw.githubusercontent.com/tomasr/molokai/master/colors/molokai.vim
 
-cat <<EOF > ~/.vimrc
+cat <<EOF > ${HOME}/.vimrc
 set nocompatible
 set background=dark
 syntax on
@@ -30,7 +30,7 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=1\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
-call plug#begin('~/.vim/plugged')
+call plug#begin('${HOME}/.vim/plugged')
 Plug 'junegunn/goyo.vim'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
