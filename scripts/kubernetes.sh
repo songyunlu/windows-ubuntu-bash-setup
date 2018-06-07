@@ -5,11 +5,11 @@ curl -LO https://storage.googleapis.com/kubernetes-release/release/v${KUBERNETES
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 kubectl version
-source <(kubectl completion zsh)
-echo 'alias kc="kubectl"' >> ~/.zshrc
+echo 'source <(kubectl completion zsh)' >> ${HOME}/.zshrc
+echo 'alias kc="kubectl"' >> ${HOME}/.zshrc
 
 # kube-shell
-pip install kube-shell
+pip install kube-shell --user $(whoami)
 
 # kubectx
 git clone https://github.com/ahmetb/kubectx.git "${HOME}/.kubectx"

@@ -34,17 +34,13 @@ EOPLUGINS
     # ^ can't indent this EOPLUGINS
     # completions
     zgen load zsh-users/zsh-completions src
-    zgen load ahmetb/kubectx completion
     # theme
     zgen oh-my-zsh themes/dst.zsh-theme
     # save all to init script
     zgen save
 fi
+bindkey '^J' autosuggest-accept
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
 EOF
-
-source ${HOME}/.bashrc
-
-echo 'bindkey '^J' autosuggest-accept' >> ${HOME}/.zshrc
-echo 'bindkey '^P' history-substring-search-up' >> ${HOME}/.zshrc  
-echo 'bindkey '^N' history-substring-search-down' >> ${HOME}/.zshrc
 
