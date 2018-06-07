@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -xe
+
 source env.sh
 
 source scripts/basic.sh
