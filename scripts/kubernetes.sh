@@ -25,3 +25,5 @@ echo 'alias kn="kubens"' >> ${HOME}/.zshrc
 git clone https://github.com/jonmosco/kube-ps1.git ${HOME}/.kube-ps1
 echo 'source ${HOME}/.kube-ps1/kube-ps1.sh' >> ${HOME}/.zshrc
 echo "PROMPT='\$(kube_ps1)'$PROMPT" >> ${HOME}/.zshrc
+echo 'export KUBE_PS1_SYMBOL_ENABLE=true'
+echo 'export KUBE_PS1_SYMBOL_USE_IMG=true'
