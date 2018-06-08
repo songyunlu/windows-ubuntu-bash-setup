@@ -37,6 +37,7 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * python
   * python2
   * pip2
+  * pip3
   * python-virtualenv
 * gcloud sdk
 * vim
