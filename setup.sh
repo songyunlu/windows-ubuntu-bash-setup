@@ -9,9 +9,9 @@ source env.sh
 source scripts/basic.sh
 source scripts/git.sh
 source scripts/zsh.sh
+source scripts/python.sh
 source scripts/jekyll.sh
 source scripts/docker.sh
-source scripts/python.sh
 source scripts/gcloud-sdk.sh
 source scripts/vim.sh
 source scripts/ansible.sh
