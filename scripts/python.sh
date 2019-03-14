@@ -9,6 +9,8 @@ sudo ln -sf /usr/bin/python3 /usr/bin/python
 python --version
 python3 --version
 
+sudo apt-get install -y python3.6-gdbm
+
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
 pip --version
