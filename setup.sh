@@ -11,7 +11,7 @@ source scripts/git.sh
 source scripts/zsh.sh
 source scripts/jekyll.sh
 source scripts/docker.sh
-source scripts/python2.sh
+source scripts/python.sh
 source scripts/gcloud-sdk.sh
 source scripts/vim.sh
 source scripts/ansible.sh
