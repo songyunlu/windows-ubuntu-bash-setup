@@ -10,6 +10,9 @@ python --version
 python3 --version
 
 sudo apt-get install -y python3.6-gdbm
+sudo apt-get remove -y --purge python-apt
+sudo apt-get install -y python-apt
+sudo cp /usr/lib/python3/dist-packages/apt_pkg.cpython-3?m-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.cpython-36m-x86_64-linux-gnu.so
 
 wget https://bootstrap.pypa.io/get-pip.py
 sudo python get-pip.py
