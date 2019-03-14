@@ -35,8 +35,7 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
   * docker-compose
   * docker-machine
 * python
-  * python2
-  * pip2
+  * python3.6
   * pip3
   * python-virtualenv
 * gcloud sdk
@@ -61,5 +60,6 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
   * kubectx
   * kubens
   * kube-ps1
+* papermill
 
 The list keeps growing...
