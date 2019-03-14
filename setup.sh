@@ -22,5 +22,6 @@ source scripts/maven.sh
 source scripts/gradle.sh
 source scripts/vagrant.sh
 source scripts/kubernetes.sh
+source scripts/papermill.sh
 
 exec zsh
