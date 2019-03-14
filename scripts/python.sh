@@ -14,4 +14,4 @@ sudo python get-pip.py
 pip --version
 
 pip install --user virtualenv
-echo 'alias ven="virtualenv"' >> ${HOME}/.zshrc
+echo 'alias venv="virtualenv"' >> ${HOME}/.zshrc
