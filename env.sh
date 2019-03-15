@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export KUBERNETES_VERSION=1.10.3
+export KUBERNETES_VERSION=1.10.11
 export VAGRANT_VERSION=2.2.4
 export GRADLE_VERSION=5.2.1
 export JAVA_VERSION=8

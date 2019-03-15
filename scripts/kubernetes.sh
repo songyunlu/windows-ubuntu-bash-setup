@@ -8,9 +8,6 @@ kubectl version
 echo 'source <(kubectl completion zsh)' >> ${HOME}/.zshrc
 echo 'alias kc="kubectl"' >> ${HOME}/.zshrc
 
-# kube-shell
-pip install kube-shell --user $(whoami)
-
 # kubectx
 git clone https://github.com/ahmetb/kubectx.git "${HOME}/.kubectx"
 sudo ln -s ${HOME}/.kubectx/kubectx /usr/local/bin/kubectx
