@@ -10,10 +10,9 @@ sudo apt-get remove -y --purge python-apt
 sudo apt-get install -y python-apt
 sudo cp /usr/lib/python3/dist-packages/apt_pkg.cpython-3?m-x86_64-linux-gnu.so /usr/lib/python3/dist-packages/apt_pkg.cpython-36m-x86_64-linux-gnu.so
 
-wget https://bootstrap.pypa.io/get-pip.py
-sudo python3.6 get-pip.py
+curl -so /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
+sudo python3.6 /tmp/get-pip.py
 pip --version
-rm get-pip.py
 
 pip install --user virtualenv
 echo 'alias venv="virtualenv"' >> ${HOME}/.zshrc
