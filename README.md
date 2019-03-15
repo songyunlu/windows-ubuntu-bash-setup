@@ -56,7 +56,7 @@ You might increase or disable sudo passowrd timeout as well by adding `Defaults 
 * gradle
 * vagrant
 * kubernetes
-  * kube-shell
+  * kubectl
   * kubectx
   * kubens
   * kube-ps1
