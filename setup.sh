@@ -13,6 +13,7 @@ source scripts/python.sh
 source scripts/jekyll.sh
 source scripts/docker.sh
 source scripts/gcloud-sdk.sh
+source scripts/aws-cli.sh
 source scripts/vim.sh
 source scripts/ansible.sh
 source scripts/golang.sh
